@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Armaan Singh | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+  <style>
+    body {
+  background-color: #0f0f0f;
+  background-image:
+    radial-gradient(circle, rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+    radial-gradient(circle at 50% 50%, rgba(255, 201, 232, 0.08), transparent 60%);
+  background-size: 30px 30px, 100% 100%;
+  animation: bgShift 10s infinite alternate;
+}
+
+@keyframes bgShift {
+  0% {
+    background-position: 0 0, 50% 50%;
+    background-size: 30px 30px, 100% 100%;
+  }
+  50% {
+    background-position: 15px 15px, 53% 53%;
+    background-size: 35px 35px, 105% 105%;
+  }
+  100% {
+    background-position: 0 0, 50% 50%;
+    background-size: 30px 30px, 100% 100%;
+  }
+}
+
+  </style>
+</head>
+
+<body class="text-white font-sans overflow-x-hidden">
+
+  <!-- Hero Section -->
+  <section class="h-screen flex flex-col items-center justify-center text-center px-4"
+           data-aos="fade-up">
+    <h1 class="text-5xl md:text-7xl font-extrabold mb-4 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
+      Armaan Singh
+    </h1>
+    <p class="text-lg md:text-2xl text-gray-300 max-w-2xl">I'm a Web Developer & Tech Enthusiast, passionate about projects that people actually use and enjoy.</p>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="py-20 px-6 max-w-4xl mx-auto text-center"
+           data-aos="fade-right">
+    <h2 class="text-4xl font-semibold mb-6 text-purple-400">About Me</h2>
+    <p class="text-gray-300 text-lg">Hey there! I'm Armaan — a developer who loves building clean, simple, and impactful projects. I enjoy collaborating with communities, creating project flows, and learning something new every day.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="section1" class="py-20 px-6 max-w-5xl mx-auto text-center"
+           data-aos="fade-left">
+    <h2 class="text-3xl font-semibold mb-6 text-pink-400">Projects</h2>
+    <p class="text-gray-400">This could be your project showcase, gallery, or portfolio grid.</p>
+  </section>
+
+  <!-- Skills & Tools Section -->
+  <section id="section2" class="py-20 px-6 max-w-5xl mx-auto text-center"
+           data-aos="fade-up">
+    <h2 class="text-3xl font-semibold mb-6 text-blue-400">Skills & Tools</h2>
+    <p class="text-gray-400">Add your skills, tools you use, or experience highlights here.</p>
+  </section>
+
+  <!-- Community & Contact Section -->
+  <section id="section3" class="py-20 px-6 max-w-5xl mx-auto text-center"
+           data-aos="zoom-in">
+    <h2 class="text-3xl font-semibold mb-6 text-green-400">Community & Contact</h2>
+    <p class="text-gray-400">Maybe your community work, blogs, or a contact form.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 text-center text-gray-500">
+    © 2025 Armaan Singh. All rights reserved.
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+
+</body>
+</html>
