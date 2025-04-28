@@ -6,35 +6,77 @@
   <title>Armaan Singh | Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
   <style>
     body {
-  background-color: #0f0f0f;
-  background-image:
-    radial-gradient(circle, rgba(255, 255, 255, 0.07) 1px, transparent 1px),
-    radial-gradient(circle at 50% 50%, rgba(255, 201, 232, 0.08), transparent 60%);
-  background-size: 30px 30px, 100% 100%;
-  animation: bgShift 10s infinite alternate;
-}
+      background-color: #0f0f0f;
+      background-image:
+        radial-gradient(circle, rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+        radial-gradient(circle at 50% 50%, rgba(255, 201, 232, 0.08), transparent 60%);
+      background-size: 30px 30px, 100% 100%;
+      animation: bgShift 10s infinite alternate;
+      font-family: 'Inter', sans-serif; /* Use the same font throughout */
+    }
 
-@keyframes bgShift {
-  0% {
-    background-position: 0 0, 50% 50%;
-    background-size: 30px 30px, 100% 100%;
-  }
-  50% {
-    background-position: 15px 15px, 53% 53%;
-    background-size: 35px 35px, 105% 105%;
-  }
-  100% {
-    background-position: 0 0, 50% 50%;
-    background-size: 30px 30px, 100% 100%;
-  }
-}
+    @keyframes bgShift {
+      0% {
+        background-position: 0 0, 50% 50%;
+        background-size: 30px 30px, 100% 100%;
+      }
+      50% {
+        background-position: 15px 15px, 53% 53%;
+        background-size: 35px 35px, 105% 105%;
+      }
+      100% {
+        background-position: 0 0, 50% 50%;
+        background-size: 30px 30px, 100% 100%;
+      }
+    }
+/* 
+    /* Navbar styles */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: transparent; /* Make navbar transparent */
+      backdrop-filter: blur(10px);
+      z-index: 10;
+    }
+
+    .navbar a {
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: 600;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+      font-family: 'Inter', sans-serif; /* Use the same font for navbar */
+    }
+
+    .navbar a:hover {
+      color: #f0f0f0;
+    } */
 
   </style>
 </head>
 
 <body class="text-white font-sans overflow-x-hidden">
+
+  <!-- Navbar
+  <nav class="navbar">
+    <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+      <a href="#" class="text-xl font-bold">Armaan Singh</a>
+      <div class="space-x-6">
+        <a href="#about">About</a>
+        <a href="#section1">Projects</a>
+        <a href="#section2">Skills</a>
+        <a href="#section3">Contact</a>
+      </div>
+    </div>
+  </nav> -->
 
   <!-- Hero Section -->
   <section class="h-screen flex flex-col items-center justify-center text-center px-4"
@@ -45,12 +87,76 @@
     <p class="text-lg md:text-2xl text-gray-300 max-w-2xl">I'm a Web Developer & Tech Enthusiast, passionate about projects that people actually use and enjoy.</p>
   </section>
 
-  <!-- About Me Section -->
-  <section id="about" class="py-20 px-6 max-w-4xl mx-auto text-center"
-           data-aos="fade-right">
-    <h2 class="text-4xl font-semibold mb-6 text-purple-400">About Me</h2>
-    <p class="text-gray-300 text-lg">Hey there! I'm Armaan — a developer who loves building clean, simple, and impactful projects. I enjoy collaborating with communities, creating project flows, and learning something new every day.</p>
-  </section>
+    <!-- About Me Section
+    <section id="about" class="py-20 px-6 max-w-4xl mx-auto text-center"
+    data-aos="fade-right">
+<h2 class="text-4xl font-semibold mb-6 text-purple-400">About Me</h2>
+<p class="text-gray-300 text-lg">Hey there! I'm Armaan — a developer who loves building clean, simple, and impactful projects. I enjoy collaborating with communities, creating project flows, and learning something new every day.</p>
+</section> -->
+
+    <!-- About Me Section -->
+    <section id="about" class="py-16 px-6 max-w-4xl mx-auto text-center"
+    data-aos="fade-right">
+<h2 class="text-4xl font-semibold mb-6 text-purple-400">I love attending tech events</h2>
+<p class="text-gray-300 text-lg">Devfests, Hackathons and other tech events</p>
+</section>
+
+
+
+<div class="mt-2 flex justify-center">
+    <div class="p-4 rounded-lg shadow-lg max-w-4xl w-full bg-gray-800">
+      
+      <!-- Image Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <img src="src/Devfest Jalandhar.jpeg" alt="Event Image" class="w-full h-64 object-cover rounded-lg">
+        <img src="src\idcard.jpeg" alt="Event Image" class="w-full h-64 object-cover rounded-lg">
+        <img src="src\hackathon.jpeg" alt="Event Image" class="w-full h-64 object-cover rounded-lg">
+        <!-- Add more images here if you want -->
+      </div>
+  
+      <!-- Description
+      <h3 class="text-2xl font-semibold text-white mt-6 mb-2 text-center">DevFest Memories</h3>
+      <p class="text-gray-300 text-center">Some amazing moments from the events I attended! 🚀</p> -->
+    </div>
+  </div>
+
+
+  <!-- Speaking -->
+  <section id="about" class="py-16 px-6 max-w-4xl mx-auto text-center mt-8"
+  data-aos="fade-left">
+<h2 class="text-4xl font-semibold mb-6 text-green-400">Public Speaking & Discussions</h2>
+<p class="text-gray-300 text-lg">I’ve had the privilege of speaking in front of 100+ people, for an ideathon, and being part of impactful panel discussions.</p>
+</section>
+
+
+
+<div class="mt-2 flex justify-center">
+  <div class="p-4 rounded-lg shadow-lg max-w-4xl w-full bg-gray-800">
+    
+    <!-- Image Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <img src="src\speaking.jpeg" alt="Event Image" class="w-full h-64 object-cover rounded-lg">
+      <img src="src\paneldiscussion.jpeg" alt="Event Image" class="w-full h-64 object-cover rounded-lg">
+      <img src="src\audience.jpeg" alt="Event Image" class="w-full h-64 object-cover rounded-lg">
+      <!-- Add more images here if you want -->
+    </div>
+
+    <!-- Description
+    <h3 class="text-2xl font-semibold text-white mt-6 mb-2 text-center">DevFest Memories</h3>
+    <p class="text-gray-300 text-center">Some amazing moments from the events I attended! 🚀</p> -->
+  </div>
+</div>
+  
+  
+  
+  
+  
+
+  
+      
+  
+
+
 
   <!-- Projects Section -->
   <section id="section1" class="py-20 px-6 max-w-5xl mx-auto text-center"
@@ -84,6 +190,7 @@
       duration: 1000,
       once: true,
     });
+
   </script>
 
 </body>
