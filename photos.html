@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Photos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2906/2906874.png" type="image/png">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <style>
+    body {
+      background-color: #0f0f0f;
+      background-image:
+        radial-gradient(circle, rgba(255, 255, 255, 0.2) 1px, transparent 1px),
+        radial-gradient(circle at 50% 50%, rgba(255, 201, 232, 0.08), transparent 60%);
+      background-size: 30px 30px, 100% 100%;
+      animation: bgShift 10s infinite alternate;
+      font-family: 'Inter', sans-serif; /* Use the same font throughout */
+    }
+
+    @keyframes bgShift {
+      0% {
+        background-position: 0 0, 50% 50%;
+        background-size: 30px 30px, 100% 100%;
+      }
+      50% {
+        background-position: 15px 15px, 53% 53%;
+        background-size: 35px 35px, 105% 105%;
+      }
+      100% {
+        background-position: 0 0, 50% 50%;
+        background-size: 30px 30px, 100% 100%;
+      }
+    }
+
+    /* Gallery Page Styles */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+
+
+    .gallery-item::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+
+  </style>
+</head>
+
+<body class="text-white font-sans overflow-x-hidden">
+
+      <section id="about" class="py-10 px-6 max-w-4xl mx-auto text-center mt-8"
+  data-aos="fade-left">
+<h2 class="text-3xl font-semibold mb-6 text-white">A collection of my memories and moments captured at various events and hackathons! 📸</h2>
+<p class="text-gray-300 text-lg"></p>
+</section>
+
+<!-- Gallery Section -->
+<section class="py-16 px-6 max-w-7xl mx-auto">
+  <div class="gallery-grid">
+    <!-- Gallery Items -->
+    <div class="gallery-item">
+      <img src="src/Devfest Jalandhar.jpeg" alt="Devfest Jalandhar" class="object-cover w-full h-64"/>
+    </div>
+         <div class="gallery-item">
+      <img src="src/idcard.jpeg" alt="Audience" class="object-cover w-full h-64"/>
+    </div>
+
+     <div class="gallery-item">
+      <img src="src/alpha-it.jpeg" alt="Audience" class="object-cover w-full h-64"/>
+    </div>
+
+     <div class="gallery-item">
+      <img src="src/dev-grp.jpeg" alt="Audience" class="object-cover w-full h-64"/>
+    </div>
+     <div class="gallery-item">
+      <img src="src/docker.jpeg" alt="Audience" class="object-cover w-full h-64"/>
+    </div>
+    <div class="gallery-item">
+      <img src="src/dev-jal.jpeg" alt="ID Card" class="object-cover w-full h-64"/>
+    </div>
+    <div class="gallery-item">
+      <img src="src/hackathon.jpeg" alt="Hackathon" class="object-cover w-full h-64"/>
+    </div>
+    <div class="gallery-item">
+      <img src="src/us-bros.jpeg" alt="Public Speaking" class="object-cover w-full h-64"/>
+    </div>
+    <div class="gallery-item">
+      <img src="src/paneldiscussion.jpeg" alt="Panel Discussion" class="object-cover w-full h-64"/>
+    </div>
+        <div class="gallery-item">
+      <img src="src/ct-hakckathon.jpeg" alt="Audience" class="object-cover w-full h-64"/>
+    </div>
+    <div class="gallery-item">
+      <img src="src/audience.jpeg" alt="Audience" class="object-cover w-full h-64"/>
+    </div>
+    <div class="gallery-item">
+      <img src="src/alpha.jpeg" alt="Audience" class="object-cover w-full h-64"/>
+    </div>
+    <div class="gallery-item">
+      <img src="src/college-bros.jpeg" alt="Audience" class="object-cover w-full h-64"/>
+    </div>
+    <div class="gallery-item">
+      <img src="src/lab.jpeg" alt="Audience" class="object-cover w-full h-64"/>
+    </div>
+
+    <!-- Add more images here as needed -->
+  </div>
+</section>
+
+
+  <!-- Footer (Optional) -->
+  <footer class="py-8 text-center text-gray-500">
+    © 2025 Armaan Singh. All rights reserved.
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+
+</body>
+</html>
